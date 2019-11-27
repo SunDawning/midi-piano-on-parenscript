@@ -1,1 +1,12 @@
-# midi-piano-on-parenscript
+# ** readme.org
+
+
+# [[file:~/literate-programming/midi-piano-on-parenscript.org::*readme.org][readme.org:1]]
+截图：[[https://i.loli.net/2018/03/12/5aa6908136a4d.png]]
+
+在线：https://sundawning.github.io/midi-piano-on-parenscript/mpop
+
+短网址：https://git.io/-mpop
+
+基于项目：https://github.com/mudcube/MIDI.js
+# readme.org:1 ends here
