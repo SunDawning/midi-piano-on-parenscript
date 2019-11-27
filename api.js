@@ -1,4 +1,3 @@
-// "use strict";
 function mpop$clTypeOf(object) {
     __PS_MV_REG = [];
     return typeof(object);
@@ -64,11 +63,11 @@ function mpop$clSubseq(arrayObject, start, end) {
 };
 /** JavaScript reduce() 方法 | 菜鸟教程: http://www.runoob.com/jsref/jsref-reduce.html */
 function mpop$clReduce(fFunction, aList) {
-    var _js67 = arguments.length;
-    for (var n66 = 2; n66 < _js67; n66 += 2) {
-        switch (arguments[n66]) {
+    var _js2 = arguments.length;
+    for (var n1 = 2; n1 < _js2; n1 += 2) {
+        switch (arguments[n1]) {
         case 'initial-value':
-            initialValue = arguments[n66 + 1];
+            initialValue = arguments[n1 + 1];
         };
     };
     var initialValue;
@@ -320,14 +319,14 @@ function mpop$fullScreenP() {
     return document.webkitIsFullScreen || document.mozFullScreen;
 };
 function mpop$clHttpRequest(uri) {
-    var _js69 = arguments.length;
-    for (var n68 = 1; n68 < _js69; n68 += 2) {
-        switch (arguments[n68]) {
+    var _js4 = arguments.length;
+    for (var n3 = 1; n3 < _js4; n3 += 2) {
+        switch (arguments[n3]) {
         case 'asynchronous-p':
-            asynchronousP = arguments[n68 + 1];
+            asynchronousP = arguments[n3 + 1];
             break;
         case 'method':
-            method = arguments[n68 + 1];
+            method = arguments[n3 + 1];
         };
     };
     var asynchronousP;
@@ -442,20 +441,20 @@ function mpop$playingFileInstruments(player) {
     return player ? player.getFileInstruments() : null;
 };
 function mpop$createLoadPluginOptions() {
-    var _js71 = arguments.length;
-    for (var n70 = 0; n70 < _js71; n70 += 2) {
-        switch (arguments[n70]) {
+    var _js6 = arguments.length;
+    for (var n5 = 0; n5 < _js6; n5 += 2) {
+        switch (arguments[n5]) {
         case 'soundfont-url':
-            soundfontUrl = arguments[n70 + 1];
+            soundfontUrl = arguments[n5 + 1];
             break;
         case 'instrument':
-            instrument = arguments[n70 + 1];
+            instrument = arguments[n5 + 1];
             break;
         case 'onprogress':
-            onprogress = arguments[n70 + 1];
+            onprogress = arguments[n5 + 1];
             break;
         case 'onsuccess':
-            onsuccess = arguments[n70 + 1];
+            onsuccess = arguments[n5 + 1];
         };
     };
     var soundfontUrl;
@@ -526,8 +525,8 @@ function mpop$flexTextarea(textarea) {
         createMirror.style.display = 'none';
         textarea.appendChild(createMirror);
         textarea.style.overflow = 'hidden';
-        for (var attribute = null, _js_arrvar73 = ['onkeydown', 'onkeypress', 'onkeyup'], _js_idx72 = 0; _js_idx72 < _js_arrvar73.length; _js_idx72 += 1) {
-            attribute = _js_arrvar73[_js_idx72];
+        for (var attribute = null, _js_arrvar8 = ['onkeydown', 'onkeypress', 'onkeyup'], _js_idx7 = 0; _js_idx7 < _js_arrvar8.length; _js_idx7 += 1) {
+            attribute = _js_arrvar8[_js_idx7];
             textarea.setAttribute(attribute, 'javascript:' + 'mpop$flexTextarea(this)');
         };
     };
@@ -562,11 +561,8 @@ function mpop$skewer(host) {
     return console.log('Skewer is Running.');
 };
 function mpop$test() {
-    var TESTEXPRESSIONSRESULT_TMPSTACK74;
-    try {
-        TESTEXPRESSIONSRESULT_TMPSTACK74 = mpop$TESTEXPRESSIONSRESULT;
-        mpop$TESTEXPRESSIONSRESULT = [];
-        (function () {
+    var mpop$TESTEXPRESSIONSRESULT = [];
+    (function () {
     var mpop$is = eval('javascript:mpop$clTypeOf(1)');
     __PS_MV_REG = [];
     return mpop$clPush({ 'form' : 'javascript:mpop$clTypeOf(1)',
@@ -905,18 +901,15 @@ function mpop$test() {
                          'passed-p' : mpop$clEqual(mpop$is, '1:12')
                        }, mpop$TESTEXPRESSIONSRESULT);
 })();;
-        __PS_MV_REG = [];
-        return mpop$analysisOfTestResults(mpop$TESTEXPRESSIONSRESULT);
-    } finally {
-        mpop$TESTEXPRESSIONSRESULT = TESTEXPRESSIONSRESULT_TMPSTACK74;
-    };
+    __PS_MV_REG = [];
+    return mpop$analysisOfTestResults(mpop$TESTEXPRESSIONSRESULT);
 };
 function mpop$analysisOfTestResults(mpop$testExpressionsResult) {
     var mpop$success = [];
     var mpop$failure = [];
-    var _js76 = mpop$testExpressionsResult.length;
-    for (var _js75 = 0; _js75 < _js76; _js75 += 1) {
-        var mpop$testExpressionResult = mpop$testExpressionsResult[_js75];
+    var _js10 = mpop$testExpressionsResult.length;
+    for (var _js9 = 0; _js9 < _js10; _js9 += 1) {
+        var mpop$testExpressionResult = mpop$testExpressionsResult[_js9];
         if (mpop$testExpressionResult['passed-p']) {
             mpop$clPush(mpop$testExpressionResult, mpop$success);
         } else {
@@ -965,11 +958,11 @@ function mpop$clZerop(number) {
     return number === 0;
 };
 function mpop$clEqual(mpop$x, mpop$y) {
-    var _js78 = arguments.length;
-    for (var n77 = 2; n77 < _js78; n77 += 2) {
-        switch (arguments[n77]) {
+    var _js12 = arguments.length;
+    for (var n11 = 2; n11 < _js12; n11 += 2) {
+        switch (arguments[n11]) {
         case 'key':
-            mpop$key = arguments[n77 + 1];
+            mpop$key = arguments[n11 + 1];
         };
     };
     var mpop$key;
@@ -990,16 +983,16 @@ function mpop$clScanToStrings(mpop$regex, mpop$targetString) {
 function mpop$clRemoveIf(mpop$predicate, mpop$object) {
     __PS_MV_REG = [];
     return (function () {
-        var _js79 = mpop$object.length - 1;
-        var collect80 = [];
-        for (var mpop$i = 0; mpop$i <= _js79; mpop$i += 1) {
+        var _js13 = mpop$object.length - 1;
+        var collect14 = [];
+        for (var mpop$i = 0; mpop$i <= _js13; mpop$i += 1) {
             if (mpop$predicate(mpop$clNth(mpop$i, mpop$object))) {
                 continue;
             };
-            collect80.push(mpop$clNth(mpop$i, mpop$object));
+            collect14.push(mpop$clNth(mpop$i, mpop$object));
         };
         __PS_MV_REG = [];
-        return collect80;
+        return collect14;
     })();
 };
 function mpop$clRemoveIfNot(mpop$predicate, sequence) {
@@ -1019,14 +1012,14 @@ function mpop$clFind(mpop$item, sequence) {
 function mpop$clMapcar(mpop$predicate, sequence) {
     __PS_MV_REG = [];
     return (function () {
-        var _js82 = sequence.length;
-        var collect83 = [];
-        for (var _js81 = 0; _js81 < _js82; _js81 += 1) {
-            var mpop$i = sequence[_js81];
-            collect83.push(mpop$predicate(mpop$i));
+        var _js16 = sequence.length;
+        var collect17 = [];
+        for (var _js15 = 0; _js15 < _js16; _js15 += 1) {
+            var mpop$i = sequence[_js15];
+            collect17.push(mpop$predicate(mpop$i));
         };
         __PS_MV_REG = [];
-        return collect83;
+        return collect17;
     })();
 };
 function mpop$clConcatenateLists() {
@@ -1075,11 +1068,11 @@ function mpop$initialCapital(string, mpop$otherLetterLowercaseP) {
  * 返回值是一个递增的计数，副作用函数。
  */
 function mpop$afterLoad(mpop$functionBefore, mpop$functionAfter) {
-    var _js85 = arguments.length;
-    for (var n84 = 2; n84 < _js85; n84 += 2) {
-        switch (arguments[n84]) {
+    var _js19 = arguments.length;
+    for (var n18 = 2; n18 < _js19; n18 += 2) {
+        switch (arguments[n18]) {
         case 'timeout':
-            mpop$timeout = arguments[n84 + 1];
+            mpop$timeout = arguments[n18 + 1];
         };
     };
     var mpop$timeout = 'undefined' === typeof mpop$timeout ? 100 : mpop$timeout;
@@ -1088,20 +1081,20 @@ function mpop$afterLoad(mpop$functionBefore, mpop$functionAfter) {
     return mpop$setTimeout(mpop$functionAfter, mpop$timeout);
 };
 function mpop$buttonOnOff(mpop$button) {
-    var _js87 = arguments.length;
-    for (var n86 = 1; n86 < _js87; n86 += 2) {
-        switch (arguments[n86]) {
+    var _js21 = arguments.length;
+    for (var n20 = 1; n20 < _js21; n20 += 2) {
+        switch (arguments[n20]) {
         case 'on-p':
-            mpop$onP = arguments[n86 + 1];
+            mpop$onP = arguments[n20 + 1];
             break;
         case 'on':
-            mpop$on = arguments[n86 + 1];
+            mpop$on = arguments[n20 + 1];
             break;
         case 'off':
-            mpop$off = arguments[n86 + 1];
+            mpop$off = arguments[n20 + 1];
             break;
         case 'class-name':
-            className = arguments[n86 + 1];
+            className = arguments[n20 + 1];
         };
     };
     var mpop$onP;
@@ -1233,11 +1226,11 @@ function mpop$existsJavascriptFiles() {
     }, mpop$getElementsByTagName('script')));
 };
 function mpop$loadJavascriptFile(mpop$src, mpop$parent, mpop$onload) {
-    var _js89 = arguments.length;
-    for (var n88 = 3; n88 < _js89; n88 += 2) {
-        switch (arguments[n88]) {
+    var _js23 = arguments.length;
+    for (var n22 = 3; n22 < _js23; n22 += 2) {
+        switch (arguments[n22]) {
         case 'force-p':
-            mpop$forceP = arguments[n88 + 1];
+            mpop$forceP = arguments[n22 + 1];
         };
     };
     var mpop$forceP;
@@ -1294,7 +1287,7 @@ function mpop$keyToNoteByElement(mpop$midi, mpop$element) {
     return mpop$clNth(mpop$innerText(mpop$element), mpop$keyToNote(mpop$midi));
 };
 function mpop$drawProgramHtmlStructure() {
-    return mpop$setfOuterHtml(mpop$getElementById('midi-piano-on-parenscript'), '\n<div id=\'midi-piano-on-parenscript\'>\n  <div id=\'extended-operation-bar\'>\n    <div onclick=\'mpop$clickToToggleFullscreen(this);\' class=\'button\'>全屏\n    </div>\n    <div class=\'button\' id=\'toggle-overflow\' onclick=\'mpop$clickToToggleOverflow(this);\'>锁定键盘\n    </div>\n    <div class=\'button\' onclick=\'mpop$clickToPopupInstrumentSelectWindow();\'>♪更换乐器\n    </div>\n    <div class=\'button\' onclick=\'mpop$clickToPopupMoreWindow();\'>更多\n    </div>\n  </div>\n  <div id=\'keyss\'></div>\n  <div id=\'popups\'>\n    <div id=\'full-screen-popups\' class=\'popup\'>\n      <div id=\'close-popup\' class=\'button\' onclick=\'mpop$clickToCloseFullScreenPopup();\'>关闭窗口\n      </div>\n      <div id=\'instrument-select-window\' class=\'popup\'>\n        <div class=\'manage-instrument\'>\n          <div class=\'title\'>♪从乐器列表里更换乐器\n          </div>\n          <div class=\'content\'>\n            <input type=\'text\' onkeydown=\'mpop$keydownToFilterOfflineInstruments(this.value);\' onkeyup=\'mpop$keydownToFilterOfflineInstruments(this.value);\' autocomplete=\'on\' placeholder=\'输入乐器的名称来筛选乐器列表（可选）\' />\n            <select id=\'select-instrument\' class=\'select\'></select>\n            <div class=\'button\' onclick=\'mpop$clickToSelectInstrument(this);\'>更换\n            </div>\n          </div>\n        </div>\n        <div class=\'manage-instrument\'>\n          <div class=\'title\'>♪设置乐器的路径\n          </div>\n          <div class=\'content\'>\n            <textarea id=\'add-instruments\'></textarea>\n            <input type=\'file\' id=\'add-instruments-by-file\' onchange=\'mpop$onChangeToAddInstrumentsByFile(this);\' />\n            <div class=\'button\' onclick=\'mpop$clickToAddInstruments();\'>添加到乐器列表\n            </div>\n            <div class=\'button\' onclick=\'mpop$clickToResetInstrumentsList();\'>删除乐器列表\n            </div>\n          </div>\n        </div>\n        <div class=\'manage-instrument\'>\n          <div class=\'title\'>♪从网络乐器库下载乐器到本地\n          </div>\n          <div class=\'content\'>\n            <input type=\'text\' onkeydown=\'mpop$keydownToFilterOnlineInstruments(this.value);\' onkeyup=\'mpop$keydownToFilterOnlineInstruments(this.value);\' placeholder=\'输入乐器的名称来筛选下载列表（可选）\' />\n            <select id=\'select-instrument-to-download\' class=\'select\' onchange=\'mpop$onchangeToUpdateDownloadInstrumentLink(this);\'></select>\n            <a class=\'button\' id=\'click-to-download-instrument\'>下载到本地\n            </a>\n          </div>\n        </div>\n      </div>\n      <div id=\'more-window\' class=\'popup\'>\n        <div class=\'manage-more\'>\n          <div class=\'title\'>♪外链\n          </div>\n          <div class=\'content\'>\n            <a href=\'https://sundawning.github.io/midi-piano-on-parenscript/mpop\' class=\'button\'>在线\n            </a>\n            <a href=\'https://github.com/sundawning/literate-programming/blob/master/midi-piano-on-parenscript.org#下载乐器和生成乐器文件\' class=\'button\'>教程\n            </a>\n            <a href=\'https://codeload.github.com/SunDawning/midi-piano-on-parenscript/zip/master\' download=\'midi-piano-on-parenscript.zip\' class=\'button\'>下载软件\n            </a>\n          </div>\n        </div>\n        <div class=\'manage-more\'>\n          <div class=\'title\'>♪评论\n          </div>\n          <div id=\'anonymous-comment\'></div>\n        </div>\n      </div>\n    </div>\n    <div id=\'floating-popups\' class=\'popup\'>\n      <div id=\'midi-player-window\'></div>\n    </div>\n  </div>\n</div>');
+    return mpop$setfOuterHtml(mpop$getElementById('midi-piano-on-parenscript'), '\n<div id=\'midi-piano-on-parenscript\'>\n  <div id=\'extended-operation-bar\'>\n    <div onclick=\'mpop$clickToToggleFullscreen(this);\' class=\'button\'>全屏\n    </div>\n    <div class=\'button\' id=\'toggle-overflow\' onclick=\'mpop$clickToToggleOverflow(this);\'>锁定键盘\n    </div>\n    <div class=\'button\' onclick=\'mpop$clickToPopupInstrumentSelectWindow();\'>♪更换乐器\n    </div>\n    <div class=\'button\' onclick=\'mpop$clickToPopupMoreWindow();\'>更多\n    </div>\n  </div>\n  <div id=\'keyss\'></div>\n  <div id=\'popups\'>\n    <div id=\'full-screen-popups\' class=\'popup\'>\n      <div id=\'close-popup\' class=\'button\' onclick=\'mpop$clickToCloseFullScreenPopup();\'>关闭窗口\n      </div>\n      <div id=\'instrument-select-window\' class=\'popup\'>\n        <div class=\'manage-instrument\'>\n          <div class=\'title\'>♪从乐器列表里更换乐器\n          </div>\n          <div class=\'content\'>\n            <input type=\'text\' onkeydown=\'mpop$keydownToFilterOfflineInstruments(this.value);\' onkeyup=\'mpop$keydownToFilterOfflineInstruments(this.value);\' autocomplete=\'on\' placeholder=\'输入乐器的名称来筛选乐器列表（可选）\' />\n            <select id=\'select-instrument\' class=\'select\'></select>\n            <div class=\'button\' onclick=\'mpop$clickToSelectInstrument(this);\'>更换\n            </div>\n          </div>\n        </div>\n        <div class=\'manage-instrument\'>\n          <div class=\'title\'>♪设置乐器的路径\n          </div>\n          <div class=\'content\'>\n            <textarea id=\'add-instruments\'></textarea>\n            <input type=\'file\' id=\'add-instruments-by-file\' onchange=\'mpop$onChangeToAddInstrumentsByFile(this);\' />\n            <div class=\'button\' onclick=\'mpop$clickToAddInstruments();\'>添加到乐器列表\n            </div>\n            <div class=\'button\' onclick=\'mpop$clickToResetInstrumentsList();\'>删除乐器列表\n            </div>\n          </div>\n        </div>\n        <div class=\'manage-instrument\'>\n          <div class=\'title\'>♪从网络乐器库下载乐器到本地\n          </div>\n          <div class=\'content\'>\n            <input type=\'text\' onkeydown=\'mpop$keydownToFilterOnlineInstruments(this.value);\' onkeyup=\'mpop$keydownToFilterOnlineInstruments(this.value);\' placeholder=\'输入乐器的名称来筛选下载列表（可选）\' />\n            <select id=\'select-instrument-to-download\' class=\'select\' onchange=\'mpop$onchangeToUpdateDownloadInstrumentLink(this);\'></select>\n            <a class=\'button\' id=\'click-to-download-instrument\'>下载到本地\n            </a>\n          </div>\n        </div>\n      </div>\n      <div id=\'more-window\' class=\'popup\'>\n        <div class=\'manage-more\'>\n          <div class=\'title\'>♪外链\n          </div>\n          <div class=\'content\'>\n            <a href=\'https://sundawning.github.io/midi-piano-on-parenscript/mpop\' class=\'button\'>在线\n            </a>\n            <a href=\'https://github.com/SunDawning/midi-piano-on-parenscript/blob/master/readme.org\' class=\'button\'>教程\n            </a>\n            <a href=\'https://codeload.github.com/SunDawning/midi-piano-on-parenscript/zip/master\' download=\'midi-piano-on-parenscript.zip\' class=\'button\'>下载软件\n            </a>\n          </div>\n        </div>\n        <div class=\'manage-more\'>\n          <div class=\'title\'>♪评论\n          </div>\n          <div id=\'anonymous-comment\'></div>\n        </div>\n      </div>\n    </div>\n    <div id=\'floating-popups\' class=\'popup\'>\n      <div id=\'midi-player-window\'></div>\n    </div>\n  </div>\n</div>');
 };
 function mpop$clickToPopupMoreWindow() {
     __PS_MV_REG = [];
@@ -1585,10 +1578,10 @@ function mpop$dropTouchmove(mpop$touchIdentifier) {
     }, mpop$TOUCHMOVE)) : null;
 };
 function mpop$dropTouchmoveByEndEvent(mpop$midi, mpop$event) {
-    var touchIdentifier90 = mpop$touchIdentifier(mpop$clFirst(mpop$changedTouches(mpop$event)));
-    mpop$unpressKeyByElement(mpop$midi, mpop$selectLastKey(touchIdentifier90));
+    var touchIdentifier24 = mpop$touchIdentifier(mpop$clFirst(mpop$changedTouches(mpop$event)));
+    mpop$unpressKeyByElement(mpop$midi, mpop$selectLastKey(touchIdentifier24));
     __PS_MV_REG = [];
-    return mpop$dropTouchmove(touchIdentifier90);
+    return mpop$dropTouchmove(touchIdentifier24);
 };
 function mpop$insertTouchmoveByStartKey(mpop$midi, mpop$event, mpop$key) {
     mpop$preventDefaultEvent(mpop$event);
@@ -1709,11 +1702,11 @@ function mpop$looseInstrumentRegexFilter(mpop$regex, mpop$instrument, mpop$key) 
     return mpop$clScanToStrings(mpop$looseFilterRegex(mpop$regex), mpop$key ? mpop$key(mpop$instrument) + mpop$instrument : mpop$instrument);
 };
 function mpop$filterAndSortInstruments(mpop$regex, mpop$instruments) {
-    var _js92 = arguments.length;
-    for (var n91 = 2; n91 < _js92; n91 += 2) {
-        switch (arguments[n91]) {
+    var _js26 = arguments.length;
+    for (var n25 = 2; n25 < _js26; n25 += 2) {
+        switch (arguments[n25]) {
         case 'key':
-            mpop$key = arguments[n91 + 1];
+            mpop$key = arguments[n25 + 1];
         };
     };
     var mpop$key;
@@ -1857,10 +1850,10 @@ function mpop$inputInstrumentsClassifier(mpop$inputInstruments, mpop$instruments
 };
 function mpop$concatenateInstruments(mpop$midi, mpop$inputValue, mpop$instruments) {
     if (!mpop$inputValueNullP(mpop$inputValue)) {
-        var inputInstruments93 = mpop$inputInstruments(mpop$inputValue);
-        var mpop$classifier = mpop$inputInstrumentsClassifier(inputInstruments93, mpop$instrumentsNames(mpop$midi));
+        var inputInstruments27 = mpop$inputInstruments(mpop$inputValue);
+        var mpop$classifier = mpop$inputInstrumentsClassifier(inputInstruments27, mpop$instrumentsNames(mpop$midi));
         __PS_MV_REG = [];
-        return mpop$clConcatenateLists(mpop$instruments, mpop$validInstruments(mpop$midi, inputInstruments93, mpop$instruments), mpop$loadInstrumentUserJs(mpop$clFirst(mpop$clNth('user-jss', mpop$classifier))));
+        return mpop$clConcatenateLists(mpop$instruments, mpop$validInstruments(mpop$midi, inputInstruments27, mpop$instruments), mpop$loadInstrumentUserJs(mpop$clFirst(mpop$clNth('user-jss', mpop$classifier))));
     };
 };
 function mpop$addInstruments(mpop$midi, mpop$inputValue) {
@@ -1986,16 +1979,16 @@ function mpop$adjustThePositionAndNumberOfButtons(mpop$keyss, mpop$keyAdjustment
     }, mpop$keyss);
 };
 function mpop$setfKeyPositionWhenProgramInitialized(mpop$keysElements, mpop$keyBorderWidth) {
-    var _js95 = mpop$keysElements.length;
-    var FIRST96 = true;
-    for (var _js94 = 0; _js94 < _js95; _js94 += 1) {
-        var mpop$keys = mpop$keysElements[_js94];
-        var mpop$i = FIRST96 ? 0 : mpop$i + 1;
+    var _js29 = mpop$keysElements.length;
+    var FIRST30 = true;
+    for (var _js28 = 0; _js28 < _js29; _js28 += 1) {
+        var mpop$keys = mpop$keysElements[_js28];
+        var mpop$i = FIRST30 ? 0 : mpop$i + 1;
         if (mpop$i > null) {
             break;
         };
         mpop$setfScrollLeft(mpop$keys, (mpop$elementScrollWidth(mpop$keys) / 52) * (30 - 7 * mpop$i) + mpop$keyBorderWidth * ((mpop$clZerop(mpop$i) ? 3 : 2) / 8));
-        FIRST96 = null;
+        FIRST30 = null;
     };
 };
 function mpop$clickToCloseFullScreenPopup() {
